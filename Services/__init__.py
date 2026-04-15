@@ -1,1 +1,2 @@
 from .ClientService import ClientService
+from .configurations import aws_access_key_id, aws_secret_access_key

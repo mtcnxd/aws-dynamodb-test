@@ -1,3 +1,4 @@
+from .configurations import aws_access_key_id, aws_secret_access_key
 from datetime import datetime
 import boto3
 
@@ -5,8 +6,8 @@ class ClientService:
     def __init__(self):
         dynamodb = boto3.resource(
             'dynamodb',
-            aws_access_key_id="",
-            aws_secret_access_key="",
+            aws_access_key_id=aws_access_key_id,
+            aws_secret_access_key=aws_secret_access_key,
             region_name='us-east-1'
         )
 
