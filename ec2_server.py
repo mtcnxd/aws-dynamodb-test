@@ -1,5 +1,5 @@
 import boto3
-from Services.configurations import instance_id, aws_access_key_id, aws_secret_access_key
+from config import *
 
 ec2 = boto3.client(
     'ec2', 

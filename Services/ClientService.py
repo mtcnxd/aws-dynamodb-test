@@ -1,5 +1,5 @@
-from .configurations import aws_access_key_id, aws_secret_access_key
 from datetime import datetime
+from config import *
 import boto3
 
 class ClientService:
